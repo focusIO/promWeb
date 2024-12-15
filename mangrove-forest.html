@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="team-io.png" type="image/x-icon">
+    <style>
+        body{
+            height: auto;
+            background-color: #343231;
+            color: white;
+        }
+			.forest{
+                font-weight: bolder;  
+                border-bottom: 3px solid #002848;
+                margin-top: 1px;
+            }
+            .header{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #ffffff;
+                padding: 20px 30px;
+                font-family: Tahoma;
+                font-size: 100%;
+                color: #002848;
+                font-weight: bold;
+            }
+            .header a{
+                color: #002848;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+            .header a:hover{
+                font-weight: bold;
+                border-bottom: 2px solid #002848;
+            }	
+			
+            /*footer*/
+			.container-footer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-top: 13%;
+                background-color: white;
+                padding: 15px 70px 0px 70px;
+            }
+            .contactLoc{
+                text-align: center;
+                color: #002848;
+            }
+            #logoTeam{
+                width: 150px;
+                height: auto;
+            }
+            #fb, #ig, #call, #mail{
+                width: 40px;
+                height: auto;
+                margin-top: 3%;
+            }
+            #fb:hover, #ig:hover, #call:hover, #mail:hover{
+                transform: scale(1.03);
+                box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+            #fbLink, #emailLink, #phNum{
+                margin-bottom: 50px;
+            }
+            .copyright{
+                text-align: center;
+                font-size: 15px;
+                color: #002848;
+                background-color: white;
+                display: grid;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+			/*For Magrove Forest*/
+			.content{
+				display: grid;
+                margin: 3% 10%;
+                padding: 20px 50px;
+                border: 3px solid #f0f0f0;
+                border-radius: 20px;
+				text-align: center;
+			}
+			.content img{
+				width: 700px;
+				height: auto;
+				display: grid;
+				margin: 3% auto;
+				border: 1px solid #f0f0f0;
+				border-radius: 10px;
+			}
+			.descript{
+                font-family: sans-serif;
+                font-size: 16px;
+                text-align: center;
+            }
+	</style>
+	<style class="responsive">
+		.col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+
+            /*Extra small devices (phones, 600px and down)*/
+            @media only screen and (max-width:600px){
+                body{ width: 100%;}
+                .header{font-size: 12px;}
+                .content img{
+                    width: 300px;
+                    height: auto;
+					display: grid;
+					margin: 1% auto;
+                }
+                p{font-size: 12px;}
+                #logoTeam{
+                    width: 75px;
+                    height: auto;
+                }
+                    #fb, #ig, #call, #mail{
+                    width: 20px;
+                    height: auto;
+                }
+            }
+            /*Small devices (portrait tablets, large phones, 600px and up*/
+            @media only screen and (min-width:600px){
+                body{ width: 100%;}
+                .header{font-size: 15px;}
+                .content img{
+                    width: 375px;
+                    height: auto;
+                    display: grid;
+                    margin: 1% auto;
+                }
+                p{font-size: 12px;}
+                #logoTeam{
+                    width: 75px;
+                    height: auto;
+                }
+                    #fb, #ig, #call, #mail{
+                    width: 20px;
+                    height: auto;
+                }
+            }
+            /*Medium devices (landscape tablets, 768px and up*/
+            @media only screen and (min-width:768px){
+                body{ width: 100%;}
+                .header{font-size: 15px;}
+                .content img{
+                    width: 400px;
+                    height: auto;
+                    display: grid;
+                    margin: 1% auto;
+                }
+                #logoTeam{
+                    width: 95px;
+                    height: auto;
+                }
+                    #fb, #ig, #call, #mail{
+                    width: 30px;
+                    height: auto;
+                }
+			}
+            /*Large devices (laptops/desktop, 992px and up*/
+            @media only screen and (min-width:992px){
+                body{ width: 100%;}
+                .header{font-size: 15px;}
+                .content img{
+                    width: 450px;
+                    height: auto;
+                    display: grid;
+                    margin: 1% auto;
+                }
+                #logoTeam{
+                    width: 100px;
+                    height: auto;
+                }
+                    #fb, #ig, #call, #mail{
+                    width: 35px;
+                    height: auto;
+                }            
+			}
+            /*Extra large devices (large laptops and desktops, 1200px and up*/
+            @media only screen and (min-width:1200px){
+                body{ width: 100%;}
+                .header{font-size: 15px;}
+                .content img{
+                    width: 500px;
+                    height: auto;
+                    display: grid;
+                    margin: 1% auto;
+                }
+                #logoTeam{
+                    width: 100px;
+                    height: auto;
+                }
+                    #fb, #ig, #call, #mail{
+                    width: 35px;
+                    height: auto;
+                }  
+            }
+	</style>
+	<title>MANGROVE FOREST PARK</title>
+</head>
+	<body>
+		<div class="header">    
+			<a href="home.html" class="home">HOME</a>
+			<a href="about.html" class="about">ABOUT</a>
+			<a href="mangrove-forest.html" class="forest">MANGROVE FOREST</a>
+			<a href="seawall.html" class="seawall">SEAWALL</a>
+			<a href="developers.html" class="devOps">DEVELOPERS</a>
+		</div>
+
+		<div class="content">
+			<h1>PANABO CITY MANGROVE FOREST PARK</h1>
+			<p class="descript"> Mangrove swamps protect coastal areas from erosion, storm surge and tsunamis and also provide a
+				habitat for a great variety of marine species to thrive.
+				In Panabo, Davao del Norte, the Panabo Mangrove Park Ecotourism Project located at
+				Brgy. JP Laurel was inaugurated last June 2019. More than this, it has been also ones
+				of a go-to spot as it gives off relaxation to its visitors, as one of the benefits
+				the pods of mangrove trees has given altogether.</p>
+			<img src="m2.jpg" alt="Mangrove Forest Entrance" class="imgForest" id="imgForest">
+			<p>[A warm welcome for the visitors.]</p>
+			<img src="m3.jpg" alt="Mangrove Forest" class="imgForest" id="imgForest">
+			<p>[Astonishing patterns of the tree barks, along its leaves.]</p>
+			<img src="m4.jpg" alt="Mangrove Forest Pathway" class="imgForest" id="imgForest">
+			<p>[A pathway that leads to the heart of the forest.]</p>
+			<img src="m5.jpg" alt="Mangrove Forest Waters" class="imgForest" id="imgForest">
+			<p>[A serene and peaceful waters of the mangrove forest.]</p>
+			<img src="m6.jpg" alt="Mangrove Forest Waters" class="imgForest" id="imgForest">
+			<img src="m7.jpg" alt="Mangrove Forest Waters" class="imgForest" id="imgForest">
+			<p>[See the light where the sky meets the sea? That's Mangroves.]</p>
+		</div>
+
+		<div class="footer">
+			<div class="container-footer">
+					<div class="logoPlace">
+					<img src="team-io.png" alt="Team Logo" id="logoTeam">
+					</div>
+					<div class="contactLoc">
+					<h6 class="address">Promotional Website by MountIO<br>New Visayas, Panabo City, <br>
+					Davao del Norte, Philippines 8105</h6>
+					</div>
+					<div class="icons">
+						<img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="fb logo" id="fb" title="FOCUS+arget">
+						<img src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=000000" alt="call" id="call" title="0966-352-5363">
+						<img src="https://img.icons8.com/?size=100&id=YRRhCXfA0Vd0&format=png&color=000000" alt="mail" id="mail" title="mount.io.focus@gmail.com">
+					</div>
+				</div>
+				<label for="copyright" class="copyright" id="copyright">MountIO &copy; 2024. All rights reserved.</label>               
+		</div>		
+	</body>
+</html>

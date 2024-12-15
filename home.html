@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="team-io.png" type="image/x-icon">
+    <style>
+        body{
+            height: auto;
+            background-color: #343231;
+            color: white;
+        }
+			.home{
+                font-weight: bolder;  
+                border-bottom: 3px solid #002848;
+                margin-top: 1px;
+            }
+            .header{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #ffffff;
+                padding: 20px 30px;
+                font-family: Tahoma;
+                font-size: 100%;
+                color: #002848;
+                font-weight: bold;
+            }
+            .header a{
+                color: #002848;
+                text-decoration: none;
+                transition: background-color 0.3s;
+            }
+            .header a:hover{
+                font-weight: bold;
+                border-bottom: 2px solid #002848;
+            }	
+			
+            /*footer*/
+			.container-footer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                margin-top: 13%;
+                background-color: white;
+                padding: 15px 70px 0px 70px;
+            }
+            .contactLoc{
+                text-align: center;
+                color: #002848;
+            }
+            #logoTeam{
+                width: 150px;
+                height: auto;
+            }
+            #fb, #ig, #call, #mail{
+                width: 40px;
+                height: auto;
+                margin-top: 3%;
+            }
+            #fb:hover, #ig:hover, #call:hover, #mail:hover{
+                transform: scale(1.03);
+                box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+            #fbLink, #emailLink, #phNum{
+                margin-bottom: 50px;
+            }
+            .copyright{
+                text-align: center;
+                font-size: 15px;
+                color: #002848;
+                background-color: white;
+                display: grid;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+			/*Solely for Home*/
+            .descript{
+                font-family: sans-serif;
+                font-size: 16px;
+                text-align: center;
+            }
+			.panabo, .cagangohan{
+                display: grid;
+                margin: 3% 10%;
+                padding: 20px 50px;
+                border: 3px solid #f0f0f0;
+                border-radius: 20px;
+                text-align: center;
+            }
+            #imgPanabo, #imgCagangohan, #imgSeawall, #imgMangrove{
+                width: 500px;
+                height: auto;
+            }
+            .link{
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .link:hover{
+                text-decoration: underline;
+            }
+	</style>
+	<style class="responsive">
+		.col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+            [class*="col-"]{
+                float: left;
+                padding: 15px;
+            }
+
+            /*Extra small devices (phones, 600px and down)*/
+            @media only screen and (max-width:600px){
+                body{ width: 100%;}
+                .header{font-size: 12px;}
+                #imgPanabo, #imgCagangohan, #imgSeawall, #imgMangrove{
+                    width: 300px;
+                    height: auto;
+                    display: grid;
+                    margin: 1% auto;
+                }
+                p{font-size: 12px;}
+                #logoTeam{
+                    width: 75px;
+                    height: auto;
+                }
+                    #fb, #ig, #call, #mail{
+                    width: 20px;
+                    height: auto;
+                }
+            }
+            /*Small devices (portrait tablets, large phones, 600px and up*/
+            @media only screen and (min-width:600px){
+                body{ width: 100%;}
+                .header{font-size: 15px;}
+                #imgPanabo, #imgCagangohan, #imgSeawall, #imgMangrove{
+                    width: 375px;
+                    height: auto;
+                    display: grid;
+                    margin: 1% auto;
+                }
+                p{font-size: 12px;}
+                #logoTeam{
+                    width: 75px;
+                    height: auto;
+                }
+                    #fb, #ig, #call, #mail{
+                    width: 20px;
+                    height: auto;
+                }
+            }
+            /*Medium devices (landscape tablets, 768px and up*/
+            @media only screen and (min-width:768px){
+                body{ width: 100%;}
+                .header{font-size: 15px;}
+                #imgPanabo, #imgCagangohan, #imgSeawall, #imgMangrove{
+                    width: 400px;
+                    height: auto;
+                    display: grid;
+                    margin: 1% auto;
+                }
+                #logoTeam{
+                    width: 95px;
+                    height: auto;
+                }
+                    #fb, #ig, #call, #mail{
+                    width: 30px;
+                    height: auto;
+                }
+            }
+            /*Large devices (laptops/desktop, 992px and up*/
+            @media only screen and (min-width:992px){
+                
+            }
+            /*Extra large devices (large laptops and desktops, 1200px and up*/
+            @media only screen and (min-width:1200px){
+                
+            }
+	</style>
+	<title>HOME | PANABO CITY</title>
+</head>
+<body>
+	<div class="header">    
+		<a href="home.html" class="home">HOME</a>
+		<a href="about.html" class="about">ABOUT</a>
+		<a href="mangrove-forest.html" class="forest">MANGROVE FOREST</a>
+		<a href="seawall.html" class="seawall">SEAWALL</a>
+		<a href="developers.html" class="devOps">DEVELOPERS</a>
+    </div>
+            <div class="content">
+            <div class="panabo">
+               <h1>PANABO CITY</h1>
+               <h2>"Banana Capital Of the Philippines"</h2>
+               <p class="descript">Panabo, officially the City of Panabo, is a component city in the province of
+                Davao del Norte, Philippines. According to the 2020 census, it has a population
+                of 209,230 people. It's neighboring cities are Tagum City and Davao City, along side 
+                municipalities of Carmen and Sto. Tomas.</p><br>
+               <img src="1.jpg" alt="Panabo City" id="imgPanabo"><br>
+               <img src="2.jpg" alt="Panabo City" id="imgPanabo"><br>               
+               <p>Photos of Panabo City's Public Park, located in the Old City Hall,
+                near Panabo City Grand Terminal.</p>
+            </div>
+       
+            <div class="cagangohan">
+                 <center><h1>CAGANGOHAN</h1>
+                 <p class="descript"> Cagangohan is one of the forty barangays in the city of Panabo, in the province of Davao del Norte.
+                    Its population as determined by the 2020 Census was 13,224.
+                    This represented 6.32% of the total population of Panabo. It is also holds the home
+                    of the fisherfolks of the city and is the host of the Mariculture Center that serves
+                    the mariculture park innovation across the country.</p>
+                <img src="c1.jpg"  alt="Cagangohan" id="imgCagangohan"><br>
+                <img src="c2.jpg"  alt="Cagangohan" id="imgCagangohan"><br>
+                <img src="c3.jpg"  alt="Cagangohan" id="imgCagangohan"><br>
+                <p>Photos of Bureau of Fisheries and Aquatic Resources - National Mariculture Center,
+                    along with its Acclimatization Area and the Cagangohan Women's Organization located
+                    in Brgy. Cagangohan.</p><br><br>
+
+                <p class="descript">The Brgy. Cagangohan does not only hold the broodstock for
+                    the seafood provision of the city, but also caters rest to its citizens by its
+                    well-known <a href="seawall.html" title="Visit link" class="link">Panabo City Seawall</a>
+                     and <a href="mangrove-forest.html" title="Visit link" class="link">Panabo City Mangrove Forest Park</a>.<br><br>
+
+                     <a href="seawall.html" target="_blank"><img src="s1.jpg" alt="Panabo City Seawall" class="imgSeawall" id="imgSeawall"></a>
+                     <a href="mangrove-forest.html" target="_blank"><img src="m1.jpg" alt="Panabo Mangrove Park" class="imgMagrove" id="imgMangrove"></a>
+                     </center>
+            </div>
+            </div>
+            
+            <div class="footer">
+                <div class="container-footer">
+                        <div class="logoPlace">
+                        <img src="team-io.png" alt="Team Logo" id="logoTeam">
+                        </div>
+                        <div class="contactLoc">
+                        <h6 class="address">Promotional Website by MountIO<br>New Visayas, Panabo City, <br>
+                        Davao del Norte, Philippines 8105</h6>
+                        </div>
+                        <div class="icons">
+                            <img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt="fb logo" id="fb" title="FOCUS+arget">
+                            <img src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=000000" alt="call" id="call" title="0966-352-5363">
+                            <img src="https://img.icons8.com/?size=100&id=YRRhCXfA0Vd0&format=png&color=000000" alt="mail" id="mail" title="mount.io.focus@gmail.com">
+                        </div>
+                    </div>
+                    <label for="copyright" class="copyright" id="copyright">MountIO &copy; 2024. All rights reserved.</label>               
+            </div>
+</body>
+</html>
